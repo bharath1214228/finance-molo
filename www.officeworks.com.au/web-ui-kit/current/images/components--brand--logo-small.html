@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Human Verification</title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    </script>
+    <script src="https://42d07e43d057.9f527df0.ap-southeast-2.token.awswaf.com/42d07e43d057/0da896374136/840293c66f75/challenge.js"></script>
+    <script src="https://42d07e43d057.9f527df0.ap-southeast-2.captcha.awswaf.com/42d07e43d057/0da896374136/840293c66f75/captcha.js"></script>
+</head>
+<body>
+    <div id="captcha-container"></div>
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+          const container = document.querySelector("#captcha-container");
+          CaptchaScript.renderCaptcha(container, async (voucher) => {
+              await ChallengeScript.submitCaptcha(voucher);
+              window.location.reload(true);
+          },
+          {
+              "key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AEeA3J7QjxEeu7AqeO84XzmAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMdUF0bPsUtxdAKJEBAgEQgDvZS1amgbVn28kDf6y8coz6rFM8tH0hDKkI28bRAmPG96XKOwj9cwncZXwDDl62XxSa40zA0nvXMXSAQA==",
+          "iv":"CgAAMQ/QmBAAADGO",
+          "context":"6jx6XihxEusXYS4KsEoRP1stlAaKpoKg1uyqajNnJRaAOitqjh2IiKlVSTsM3SCSfjk5F/GOW6Fxf/abKLy/IF9/8zHCZBk50kxEuCKBPQ1DxhaNW9vlFHNvONh8Njgh4HwI4pT9csWYSDKaWMOjzcXdcEhtTRVYFx18Et4Bop2xvaF5L4gmEZLgBiufkJiXkraE4DQSfmLZ3ji4fDalKpHOT9p3Sl5GmL1mS90WEa66IRuH323IuRccuM6HO7jvtbZgo9cTMRMkTcoU8W+UuFqa2C0E2n54HJP1zfSQHnxdIVtPLFuN/cBPq0SseA3fOYwrBN85+czHviKsO4zU+IgeqnVFG5NyV5mbKNp3aT7/cPmT"
+          }
+      );
+    });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, you need to verify that you're not a robot by solving a CAPTCHA puzzle.
+         The CAPTCHA puzzle requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>
